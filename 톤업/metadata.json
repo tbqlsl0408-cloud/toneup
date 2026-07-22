@@ -1,0 +1,6 @@
+{
+  "name": "업무용 말투 변환기",
+  "description": "대충 작성한 일상 대화나 메모를 격식 있고 정중한 비즈니스 말투로 매끄럽게 변환해 주는 AI 도우미입니다.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

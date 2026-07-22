@@ -1,0 +1,27 @@
+{
+  "entities": {
+    "Preset": {
+      "title": "Preset",
+      "description": "Custom business writing situation preset template",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "description": "Unique identifier of the preset" },
+        "userId": { "type": "string", "description": "Owner user ID" },
+        "title": { "type": "string", "description": "Title of the situation" },
+        "category": { "type": "string", "description": "Category of the situation" },
+        "draft": { "type": "string", "description": "Draft template text" },
+        "suggestedTone": { "type": "string", "description": "Suggested tone" },
+        "suggestedFormat": { "type": "string", "description": "Suggested format" },
+        "suggestedContext": { "type": "string", "description": "Optional suggested context" },
+        "createdAt": { "type": "number", "description": "Creation timestamp" }
+      },
+      "required": ["id", "userId", "title", "category", "draft", "suggestedTone", "suggestedFormat", "createdAt"]
+    }
+  },
+  "firestore": {
+    "presets/{presetId}": {
+      "schema": "Preset",
+      "description": "Collection of user-defined presets"
+    }
+  }
+}
